@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
-import MenuItem from '../menu-item/menu-item.component';
+import MenuItem from "../menu-item/menu-item.component";
 
-import './directory.styles.scss';
+import "./directory.styles.scss";
 
 class Directory extends React.Component {
   constructor() {
@@ -11,36 +11,41 @@ class Directory extends React.Component {
     this.state = {
       sections: [
         {
-          title: 'hats',
-          imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+          title: "hats",
+          imageUrl:
+            "https://images.freeimages.com/images/thumbs/dd3/patrol-hat-1499927.jpg",
           id: 1,
-          linkUrl: 'hats'
+          linkUrl: "hats"
         },
         {
-          title: 'jackets',
-          imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+          title: "jackets",
+          imageUrl:
+            "https://media.istockphoto.com/photos/fashion-portrait-pretty-sweet-woman-blowing-red-lips-black-hat-picture-id615595706",
           id: 2,
-          linkUrl: ''
+          linkUrl: ""
         },
         {
-          title: 'sneakers',
-          imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+          title: "sneakers",
+          imageUrl:
+            "https://images.freeimages.com/images/large-previews/a2c/sneakers-1541724.jpg",
           id: 3,
-          linkUrl: ''
+          linkUrl: ""
         },
         {
-          title: 'womens',
-          imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-          size: 'large',
+          title: "womens",
+          imageUrl:
+            "https://images.freeimages.com/images/large-previews/1e0/manken-model-turkish-women-1438588.jpg",
+          size: "large",
           id: 4,
-          linkUrl: ''
+          linkUrl: ""
         },
         {
-          title: 'mens',
-          imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-          size: 'large',
+          title: "mens",
+          imageUrl:
+            "https://media.istockphoto.com/photos/young-long-bearded-man-with-suit-picture-id645998452",
+          size: "large",
           id: 5,
-          linkUrl: ''
+          linkUrl: ""
         }
       ]
     };
@@ -48,7 +53,7 @@ class Directory extends React.Component {
 
   render() {
     return (
-      <div className='directory-menu'>
+      <div className="directory-menu">
         {this.state.sections.map(({ id, ...otherSectionProps }) => (
           <MenuItem key={id} {...otherSectionProps} />
         ))}
